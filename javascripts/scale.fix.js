@@ -15,3 +15,6 @@ function gestureStart() {
     }
   }
 }
+function calcBday(e) {
+  console.log(e);
+}
