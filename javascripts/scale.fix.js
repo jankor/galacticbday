@@ -17,6 +17,8 @@ function gestureStart() {
 }
 function calcBday(e) {
   var birth = Date.parse(document.getElementById("birthday").value);
+  console.log(document.getElementById("birthday").value);
+  if (birth == "Invalid Date") return false;
   var result = "";
   var bday = new Date( birth + 633.7 * 86400000 );
   for (i = 1; i < 40; i++) {
