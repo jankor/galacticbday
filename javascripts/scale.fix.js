@@ -15,6 +15,6 @@ function gestureStart() {
     }
   }
 }
-function calcBday(e) {
-  console.log(e);
+function calcBday() {
+  console.log();
 }
