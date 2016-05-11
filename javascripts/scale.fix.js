@@ -20,7 +20,7 @@ function calcBday(e) {
   if (isNaN(birth)) return false;
   var result = "";
   var bday = new Date( birth + 633.7 * 86400000 );
-  for (i = 1; i < 40; i++) {
+  for (i = 1; i < 66; i++) {
     result = result + "<tr><td>" + i + "</td><td>" + bday + "</td></tr>";
     bday = new Date( bday.getTime() + 633.7 * 86400000 ) ;
   }
