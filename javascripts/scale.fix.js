@@ -19,8 +19,8 @@ function calcBday(e) {
   var birth = Date.parse(document.getElementById("birthday").value);
   var result = "";
   var bday = new Date( birth + 633.7 * 86400000 );
-  for (i = 0; i < 40; i++) {
-    result = result + bday;
+  for (i = 1; i < 40; i++) {
+    result = result + "<tr><td>" + i + "</td><td>" + bday + "</td></tr>";
     bday = new Date( bday.getTime() + 633.7 * 86400000 ) ;
   }
   document.getElementById('bdays').innerHTML = result;
