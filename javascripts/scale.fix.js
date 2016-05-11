@@ -15,6 +15,11 @@ function gestureStart() {
     }
   }
 }
-function calcBday() {
-  console.log();
+function calcBday(e) {
+  var birth = Date.parse(document.getElementById("bday").value);
+  var bday = new Date( birth + 633.7 * 86400000 );
+  for (i = 0; i < 40; i++) {
+    console.log(bday);
+    bday = new Date( bday.getTime() + 633.7 * 86400000 ) ;
+  }
 }
